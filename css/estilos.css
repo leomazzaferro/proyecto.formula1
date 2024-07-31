@@ -1,0 +1,191 @@
+/* estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif; }
+
+body {
+  background-color: white;
+  font-size: 16px; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+h4 {
+  margin: 0;
+  padding: 0; }
+
+/******** navegacion *********/
+.navbar {
+  background-color: #d50000; }
+
+.nav-logo {
+  width: 120px; }
+
+/* botones del nav */
+.button {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: white;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500; }
+  .button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 3px solid white; }
+    .button span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8%;
+      height: 500%;
+      background: #d50000;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-60deg);
+      transition: all 0.3s; }
+  .button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: white; }
+  .button:hover {
+    color: #d50000; }
+  .button:active span::before {
+    background: white; }
+
+/* navegacion dos/derecha */
+.nav-dos {
+  display: flex;
+  margin: 0; }
+  .nav-dos li {
+    font-size: 24px;
+    margin: 0px 5px; }
+    .nav-dos li a {
+      color: white; }
+
+/* fin nav-dos */
+/******* main home ********/
+/* presentacion */
+.home {
+  width: 100%;
+  height: 550px;
+  background: url(../imagenes/carrusel/img.mercedes.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+  color: white; }
+
+.fondo {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px; }
+
+.boton2 {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #474747;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff; }
+  .boton2:hover {
+    color: #fff;
+    background-color: black; }
+
+/* cards home */
+.cards {
+  padding: 0;
+  margin-top: 20px;
+  justify-content: space-between; }
+
+.card {
+  border: none;
+  background-color: rgba(91, 91, 91, 0.1); }
+
+/* baner home */
+.baner {
+  width: 100%;
+  height: 350px;
+  color: #fff;
+  background: url(../imagenes/carrusel/largadabarhein.jpg) no-repeat center center/cover;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/********* main escuderias **********/
+#img-pilotos {
+  width: 50px; }
+
+/********* footer *********/
+/* redes */
+.social {
+  margin: 30px; }
+  .social p {
+    text-align: center;
+    font-size: 25px; }
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .redes a {
+    margin: 0 30px; }
+    .redes a i {
+      font-size: 3rem; }
+    .redes a:hover {
+      color: black; }
+
+/* footer */
+.footer {
+  background-color: #d50000;
+  padding: 20px; }
+
+.footer-flex {
+  padding: 20px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  border-radius: 5px;
+  color: white; }
+  .footer-flex div div {
+    text-align: center; }
+
+.listas li {
+  padding-bottom: 3px; }
+  .listas li a {
+    color: white; }
+    .listas li a:hover {
+      color: black; }
+
+.copy-r {
+  color: white;
+  text-align: end;
+  padding-top: 10px; }
